@@ -10,6 +10,8 @@ require(['vs/editor/editor.main'], function () {
 
     var saveButton = document.getElementById('saveButton');
 
+    editor.updateOptions({ wordWrap: "on" })
+
     // Function to load the 'note.txt' file from the server
     function loadNote() {
         fetch('/load-note') // Replace with the appropriate server endpoint
